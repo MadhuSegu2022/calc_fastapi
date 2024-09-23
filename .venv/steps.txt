@@ -1,0 +1,22 @@
+
+## Steps to activate the VM in our local PC
+go to cmd C:\DevOps\python\calculator>python -m venv .venv
+C:\DevOps\python\calculator>.\.venv\scripts\activate
+C:\DevOps\python\calculator>python.exe -m pip install --upgrade pip
+C:\DevOps\python\calculator>pip install uvicorn
+C:\DevOps\python\calculator>pip freeze > requirments.txt
+code .
+
+got to shfit+cntrl+p and select the new env as interpreter
+C:\DevOps\python\calculator> fastapi dev main.py   
+
+Open the command palette (Ctrl + Shift + P or Cmd + Shift + P).
+Type "Python: Select Interpreter" and select it.
+Choose the desired interpreter from the list.
+
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/xxx/calc_fastapi.git
+git push -u origin master or main
