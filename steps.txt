@@ -8,11 +8,30 @@ C:\DevOps\python\calculator>pip freeze > requirments.txt
 code .
 
 got to shfit+cntrl+p and select the new env as interpreter
-C:\DevOps\python\calculator> fastapi dev main.py   
+C:\DevOps\python\calculator> fastapi dev main.py  
+
+ pip install fastapi[standard]
 
 Open the command palette (Ctrl + Shift + P or Cmd + Shift + P).
 Type "Python: Select Interpreter" and select it.
 Choose the desired interpreter from the list.
+
+If not comes to execute fastapi then run the below commands
+pip install fastapi uvicorn
+uvicorn main:app --reload
+pip install fastapi uvicorn
+uvicorn main:app --reload
+
+Remove .venv Steps
+/*1. rm -rf .venv
+->bash command 
+2. python -m venv .venv
+3. source .venv/bin/activate
+4. .venv\Scripts\activate
+5. pip install <package_name>
+6. deactivate*/
+
+
 
 
 git init
